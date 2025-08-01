@@ -1,3 +1,8 @@
+# Warning contains some questionable responses prefer production version.
+
+# https://github.com/zv8001/Protogen-bot-made-with-GPT/
+
+
 import discord
 from discord import app_commands
 import random
