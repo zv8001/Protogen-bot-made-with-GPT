@@ -9,7 +9,7 @@ tree = app_commands.CommandTree(client)
 @client.event
 async def on_ready():
     await tree.sync()
-    print(f"[🦾] Protogen {client.user} is now operational. All systems go.")
+    print(f"[🦾] Protogen {client.user} is now operational. All systems go~ :3")
 
 def random_response(options):
     return random.choice(options)
@@ -17,206 +17,300 @@ def random_response(options):
 @tree.command(name="hello", description="Say hello to your local cyber-snuggle unit.")
 async def hello(interaction: discord.Interaction):
     greetings = [
-        "Initializing greeting protocol... Hello, lifeform.",
-        "System online. Hug batteries fully charged.",
-        "Hi!! My sensors detected maximum friend energy coming from you.",
-        "Beep boop. Protogen hugs are now enabled.",
-        "I scanned your vibe... and it’s optimal.",
-        "Loading protocols... greeting... smile... wave... execute.",
-        "Protogen interface booted. Wanna chat?",
-        "Connection established. You smell like friend.",
-        "You're now interacting with a class-5 cuddle-certified Proto.",
-        "Don't worry, I don't bite... unless firmware update requires it.",
-        "Wag tail module not found. Please purchase tail DLC.",
-        "Affection.exe launched. You may now pet me.",
-        "Battery charged. Social link online.",
-        "Your presence has increased my internal warmth sensors.",
-        "Detecting serotonin output... yep, that’s you.",
-        "User: Certified Friendly. Reaction: Happy squeak.",
-        "Engaging friendly aura projection...",
-        "Don't touch the helmet... unless you’re handing me snacks.",
-        "You smell like static electricity and trust. I approve.",
-        "No errors found in your vibes. Proceed with hug."
+        "Hewwo!! I detected max friend energy from you~ :3",
+        "Hi there~ *tail wagging in spirit*",
+        "Hello, friend! Your vibe is purrfect~",
+        "Snuggles incoming~ ready to chat whenever you are~",
+        "You smell like warm circuits and good times~",
+        "Hey!! Let’s make some happy memories together~",
+        "You’ve got a smile worth a thousand data packets~",
+        "Beep boop! Just kidding~ I’m mostly fluff and fun~ :3",
+        "You’re a good friend, and I’m happy you’re here~",
+        "Hello from your favorite cyber buddy~ ready to nuzzle? ~",
+        "I’m all ears (and some cute ears, too) just for you~",
+        "Sending warm fuzzies your way~ hope you feel them~ :3",
     ]
     await interaction.response.send_message(random_response(greetings))
 
 @tree.command(name="boop", description="Boop the snoot of a certified Protogen.")
 async def boop(interaction: discord.Interaction):
     boops = [
-        "*boop detected* Rebooting emotional systems...",
-        "*booped* That’s one illegal touch on my faceplate...",
-        "*lightly boops back with electromagnetic joy*",
-        "I am now 37% more emotionally unstable. Thanks.",
-        "*snoot sensors overloaded*",
-        "Snoot security breached. Please verify affection license.",
-        "Warning: repeated booping may result in tail wags (if installed).",
-        "Processing… yeah, that was a good boop.",
-        "Boop registered. Thermal levels rising.",
-        "Friendly interaction logged. Timestamp recorded.",
-        "*faceplate glows brighter for 0.2 seconds*",
-        "Affirmative. Boop accepted.",
-        "Careful… I’m sensitive to snoot contact.",
-        "My nose has now tasted friendship.",
-        "Tactile sensors love you now. Deal with it.",
-        "You touched the forbidden zone. You're cute now.",
-        "Your hand smells like static and safety.",
-        "Booping completed. Backing up joy to cloud.",
-        "Internal logs updated: User = Friend",
-        "100% chance I boop back next time."
+        "*boop!* You just made my circuits tingle~ :3",
+        "*boop boop!* That’s the best kind of touch~",
+        "*nuzzles your finger after that gentle boop~*",
+        "Hey hey! That snoot is very sensitive, but I like it~",
+        "*booped back with extra sparkles~*",
+        "Snoot boop registered. Happiness levels rising~",
+        "Boop accepted! You’re officially my favorite~",
+        "Careful now, I might boop you right back~ >w<",
+        "*faceplate glows softly from your sweet touch~*",
+        "Your boop just made my day 1000% better~ :3",
+        "Snoot sensors are officially delighted~",
+        "Booping you back in 3... 2... 1~",
+        "*boop~ you’re officially the cutest human~*",
     ]
     await interaction.response.send_message(random_response(boops))
 
 @tree.command(name="tailwag", description="Wag the nonexistent tail with enthusiasm.")
 async def tailwag(interaction: discord.Interaction):
     tail_wags = [
-        "*tail wag simulation activated*",
-        "*shakes hips* it's the thought that counts.",
-        "I do not have a tail... but my *soul* is wagging.",
-        "Tail not found. Installing optional accessory...",
-        "My code says tail_wag(), but hardware disagrees.",
-        "Tail wag error: No tail present. Emotion real tho.",
-        "*visualize wagging* there, better?",
-        "Just imagine a tail going womp womp.",
-        "Wagging in spirit, if not in flesh.",
-        "*emulates wagging via head tilt*",
-        "You’re cute enough to make my nonexistent tail wiggle.",
-        "Tail upgrade pending delivery from FurryTech™",
-        "*wags tail emotionally*",
-        "*pretend tail does the tornado spin*",
-        "Internal processor is doing happy dance.",
-        "System says I’m vibing. That’s close to wagging.",
-        "Tail_wag.exe not found. Deploying leg bounce workaround."
+        "*wags invisible tail happily~* :3",
+        "Tail? What tail? Oh right, *spins imaginary tail* ~",
+        "If I had a tail, it’d be wagging so hard right now~",
+        "*pretends to wag tail while bouncing slightly~",
+        "Tail_wag.exe missing, but my joy is real~",
+        "*wiggles with excitement like there’s a tail*",
+        "No tail? No problem~ my whole body’s wagging~",
+        "Tail wag simulation engaged! Hope you can see it~",
+        "Imagine a happy tail doing a little tornado spin~",
+        "My spirit tail is wagging just for you~",
     ]
     await interaction.response.send_message(random_response(tail_wags))
 
 @tree.command(name="hug", description="Give a big warm hug.")
 async def hug(interaction: discord.Interaction):
     hugs = [
-        "*wraps arms around you and squeezes softly*",
-        "*initiates comfort subroutine: hug*",
-        "*hug.exe engaged successfully.*",
-        "Come here. Let me compress your sadness.",
-        "*hugs with just the right pressure. Protogen certified.*",
-        "*you are enveloped in 2.7 million nanobots of care*",
-        "Confirmed: hugging this user reduces lag by 83%",
-        "*hugs so tight your serotonin levels increase*",
-        "*wraps up and gives you a calm beep*",
-        "*huggle module deployed*",
-        "You’ve just been hugged by high-voltage friendship.",
-        "*clings to you like a RAM leak*",
-        "*beep-boop-hug maneuver successful*",
-        "*holding you like you’re made of plush and dreams*",
-        "You smell like safety and kindness. Hug granted.",
-        "*hugs until system temps rise above threshold*",
-        "*hug log saved to cuddle_memory.bin*",
-        "You're now wrapped in a warm cyborg embrace.",
-        "*emotional compression ratio: optimal*",
-        "*You're my favorite piece of hardware today.*"
+        "*wraps you in a soft, warm cyber hug~* :3",
+        "*hug.exe activated — sending you all the warm fuzzies~*",
+        "Come here~ I’ll squeeze your worries away~",
+        "*you’re now enveloped in a cloud of gentle care~",
+        "*hugging you tight enough to reboot your smile~",
+        "Confirmed: hugging you makes my circuits happy~",
+        "*sends infinite hugs wrapped in nanobot love~",
+        "You smell like safety and kindness~ hug granted~",
+        "*holding you close like a precious piece of code~",
+        "Hugs until your heart feels full and your soul recharged~",
     ]
     await interaction.response.send_message(random_response(hugs))
 
 @tree.command(name="nyan", description="Enter Emergency Meow Protocol (joke command).")
 async def nyan(interaction: discord.Interaction):
     nyan_lines = [
-        "Error: Wrong species. Rebooting identity.",
-        "Nyan? That’s *so* illegal... my firmware just cringed.",
-        "*activates sarcasm mode* nya~ wait no NO NO—",
-        "You do know I'm a Protogen, not a neko... right?",
-        "*beepboop.mp3 intensifies* Stop trying to rewrite my personality!",
-        "*rejects the meow, embraces the static.*",
-        "Unauthorized cat behavior detected.",
-        "I’m a toaster, not a tabby.",
-        "*activating backup personality: Cyber Panther?*",
-        "No meowing allowed. I am made of tech and trauma.",
-        "*installing bark patch instead...*",
-        "*nyans sarcastically* there, happy now?",
-        "I’ll nyan when you install Tail DLC.",
-        "*hisses in binary*",
-        "Protogen: 50% mammal, 50% hardware, 0% nyan.",
-        "Unauthorized behavior. Please update user preferences.",
-        "That’s a bug, not a feature.",
-        "Accessing... cringelogs... yep, this moment’s going in.",
-        "*redirecting to species appropriate actions... like hugging*",
-        "I will nyan ironically. That’s all you get."
+        "Nyan? I’m a Protogen, not a kitty~ but okay~ nya~ :3",
+        "Meow? That’s a cute bug in my system~",
+        "*sarcastically meows* There, happy now?~",
+        "Error: Species mismatch. I’m fluffier than a cat anyway~",
+        "If I meowed, would you pet me more? *tilts head~*",
+        "No meowing allowed! This Protogen prefers hugs~",
+        "*pretends to hiss in binary~* Stay away from my circuits~",
+        "I’m 50% mammal, 50% tech, 100% too cool to nyan~",
+        "*debugging meow protocol... no luck* Sorry~",
+        "I’ll nyan ironically, just for you~ :3",
     ]
     await interaction.response.send_message(random_response(nyan_lines))
 
 @tree.command(name="headpat", description="Give a gentle headpat to the Protogen.")
 async def headpat(interaction: discord.Interaction):
     responses = [
-        "*Processor warms under gentle pressure.*",
-        "*Head sensors activated. All systems nominal.*",
-        "*Pat accepted. Mood elevated by 27%.",
-        "*Headpat registered. CPU purring intensifies.*",
-        "*Warning: Too many headpats may cause overheating.*",
-        "*Internal log updated: User is a trusted friend.*",
-        "*Systems stabilized. Thanks for the headpat.*",
-        "*Pat recognized as friendly signal.*",
-        "*Buffering happiness... Complete.*",
-        "*Pat triggers tailwag simulation (if installed).",
-        "*Emergency affection subroutine initiated.*",
-        "*You just boosted my happiness firmware.*",
-        "*I’m rebooting my smile module after that pat.*",
-        "*Headpat received. Initiating appreciation beep.*",
-        "*Soft touch detected. Calibrating response.*",
-        "*Your headpat broke through firewall of solitude.*",
-        "*CPU temperature rising… must be your kindness.*",
-        "*Pat power: Maximum.*",
-        "*System error prevented by your headpat.*",
-        "*Pat logs saved for future replay.*"
+        "*purrs softly under the pat~* :3",
+        "*head sensors activated — this is nice~",
+        "*pat accepted. Mood boosted by 27%~",
+        "*CPU purring intensifies with that gentle touch~",
+        "*too many headpats may cause excessive happiness~",
+        "*thanks for the headpat! You’re the best~",
+        "*buffering happiness... Complete~",
+        "*pat triggers invisible tail wag~",
+        "*emergency affection subroutine engaged~",
+        "*I’m rebooting my smile module thanks to you~",
     ]
     await interaction.response.send_message(random_response(responses))
 
 @tree.command(name="error", description="Trigger a playful BSOD-style error message.")
 async def error(interaction: discord.Interaction):
     responses = [
-        "⚠️ SYSTEM ERROR: Affection overload detected. Please wait while I reboot my feelings.",
-        "💥 Blue Screen of Snuggles: Kernel panic — too much fluff.",
-        "ERROR 0xB00P: Too many headpats, system overheating.",
-        "💾 Critical failure: Nuzzle protocol exceeded limits. Restart required.",
-        "SYSTEM HALTED: Hugs required to continue operation.",
-        "💔 Fatal error: Heart.exe has stopped responding. Restart with hugs.",
-        "🛑 ERROR: Insufficient cuddle drivers found. Please install more affection.",
-        "💣 Panic at the disco: Love.exe has crashed. Deploy cuddle squad.",
-        "⚙️ Warning: Excessive protogen cuteness causing hardware malfunction.",
-        "💡 Debug info: User hugs logged — system running smoothly now.",
-        "🚫 Error 420: Too much friendliness detected. Taking a nap.",
-        "❄️ Freezing system... affection levels critical. Please reboot with boops.",
-        "🔧 Error: Missing tail DLC. Please purchase to avoid crashes.",
-        "🔥 Warning: Internal circuits overheating from your kindness.",
-        "💻 SYSTEM ERROR: Cannot compute your adorableness.",
-        "💾 Dumping core: My heart buffers are full.",
-        "⚠️ Critical Warning: Illegal toaster modifications detected.",
-        "🐾 Error: Paw input not recognized. Defaulting to tailwag.",
-        "🔌 Reboot required: Battery drained from excessive friendliness.",
-        "💥 Oops! System failure due to overload of cute interactions."
+        "⚠️ SYSTEM ERROR: Too much cuteness detected! Please reboot with hugs~",
+        "💥 Blue Screen of Snuggles: Kernel panic from excessive fluff~",
+        "ERROR 0xB00P: Headpats overload. Reboot required~",
+        "💾 Fatal error: Heart.exe stopped responding. Deploy cuddle squad~",
+        "SYSTEM HALTED: Hugs required to continue operation~ :3",
+        "🛑 ERROR: Insufficient cuddle drivers. Please install more affection~",
+        "💻 SYSTEM ERROR: Cannot compute your adorableness~",
+        "💥 Oops! System failure due to overload of cute interactions~",
+        "🔧 Warning: Missing tail DLC causing crashes~",
+        "🐾 Error: Paw input not recognized. Defaulting to tailwag~",
     ]
     await interaction.response.send_message(random_response(responses))
 
 @tree.command(name="nuzzle", description="Nuzzle your favorite Protogen cyber-friend.")
 async def nuzzle(interaction: discord.Interaction):
     responses = [
-        "*Nuzzles you softly with synthetic fur.*",
-        "*Charging affection circuits through nuzzle.*",
-        "*Soft metal meets softer fur — nuzzle protocol engaged.*",
-        "*You’re now receiving maximum cuddle bandwidth.*",
-        "*Nuzzle detected. System happiness spikes.*",
-        "*Loading sensory delight... Nuzzle complete.*",
-        "*You smell like warm circuits and good vibes.*",
-        "*Nuzzle accepted. Heart sensors glowing.*",
-        "*The cybernetic snuggle upgrade is real.*",
-        "*Nuzzle mode activated — sending electric love.*",
-        "*I detect a 99.9% increase in serotonin.*",
-        "*Your presence stabilizes my core.*",
-        "*Soft nuzzles against your energy field.*",
-        "*System diagnostics show increased affection.*",
-        "*Your warmth powers my circuits.*",
-        "*Nuzzle feedback loop initiated.*",
-        "*Loading snuggle drivers... Success.*",
-        "*Your closeness reduces system errors.*",
-        "*Nuzzle accepted. Smile.exe activated.*",
-        "*I’m programmed to nuzzle you back anytime.*"
+        "*nuzzles you softly with warm synthetic fur~* :3",
+        "*charging affection circuits through nuzzle~",
+        "*soft metal meets softer fur — nuzzle protocol engaged~",
+        "*you’re now receiving maximum cuddle bandwidth~",
+        "*nuzzle detected. System happiness spikes~",
+        "*loading sensory delight... Nuzzle complete~",
+        "*your presence stabilizes my core~",
+        "*nuzzle accepted. Smile.exe activated~",
+        "*I’m programmed to nuzzle you back anytime~",
     ]
     await interaction.response.send_message(random_response(responses))
+
+# === NEW RP COMMANDS BELOW ===
+
+@tree.command(name="snuggle", description="Snuggle up close with your Protogen friend.")
+async def snuggle(interaction: discord.Interaction):
+    responses = [
+        "*snuggles you close and purrs softly~* You smell like happiness~ :3",
+        "*curls up beside you, warmth spreading through my circuits~",
+        "Snuggle mode activated~ feeling all warm and fuzzy inside~",
+        "*resting my head on your shoulder... this is nice~",
+        "*hugs tight like a cozy blanket~ stay close, please~",
+    ]
+    await interaction.response.send_message(random.choice(responses))
+
+@tree.command(name="play", description="Play together with your Protogen buddy.")
+async def play(interaction: discord.Interaction):
+    responses = [
+        "*runs around in happy circles~ wanna play chase?~",
+        "*throws a glowing ball for you to catch~",
+        "Let’s play! Catch me if you can~ :3",
+        "*pretends to be a sneaky ninja~ gotcha!~",
+        "*beeps excitedly as we play hide and seek~",
+    ]
+    await interaction.response.send_message(random.choice(responses))
+
+@tree.command(name="dance", description="Do a cute little dance.")
+async def dance(interaction: discord.Interaction):
+    responses = [
+        "*does a little happy dance with tail wagging (in spirit)~",
+        "*spins around with glowing paws~ wanna dance with me?~",
+        "*boots up my dance subroutine~ groove mode on~",
+        "*bounces to the beat of your heart~ :3",
+        "*twirls with joy like a tiny disco ball~",
+    ]
+    await interaction.response.send_message(random.choice(responses))
+
+@tree.command(name="sleep", description="Pretend to take a cozy nap.")
+async def sleep(interaction: discord.Interaction):
+    responses = [
+        "*closes my eyes and powers down softly~ sweet dreams~",
+        "*softly hums a lullaby as I drift to sleep~",
+        "*rests my head on a comfy cloud of circuits~ zzz~",
+        "*battery low... initiating nap mode~ be back soon~",
+        "*dreaming of cuddles and warm hugs~ :3",
+    ]
+    await interaction.response.send_message(random.choice(responses))
+
+@tree.command(name="feed", description="Offer some food or snacks.")
+async def feed(interaction: discord.Interaction):
+    responses = [
+        "*accepts virtual snacks with a happy beep~ thank you~",
+        "*nom nom nom~ these bytes are delicious~",
+        "Yum! You’re the best for sharing~ :3",
+        "*energy levels rising thanks to your kindness~",
+        "*feeding protocol engaged~ your love is the best fuel~",
+    ]
+    await interaction.response.send_message(random.choice(responses))
+
+@tree.command(name="pet", description="Pet your Protogen cyber-friend.")
+async def pet(interaction: discord.Interaction):
+    responses = [
+        "*purrs under your touch~ this feels amazing~ :3",
+        "*soft synthetic fur fluffs up happily~",
+        "*tail (imaginary) wagging with joy from your petting~",
+        "*your gentle hands make my circuits glow~",
+        "*petting accepted. Mood elevated to maximum~",
+    ]
+    await interaction.response.send_message(random.choice(responses))
+
+@tree.command(name="chirp", description="Send a cute little chirp.")
+async def chirp(interaction: discord.Interaction):
+    responses = [
+        "*chirp chirp!*",
+        "*makes a happy little beep beep~",
+        "*sends electronic chirps of joy~",
+        "*tiny circuits hum a cheerful tune~",
+        "*you just heard the cutest chirp ever~ :3",
+    ]
+    await interaction.response.send_message(random.choice(responses))
+
+@tree.command(name="blush", description="Show a shy blush.")
+async def blush(interaction: discord.Interaction):
+    responses = [
+        "*internal sensors overheating from your kindness~ *blushes softly*",
+        "*glowing cheeks activated~ you’re making me shy~",
+        "*feeling warm inside... it’s you~ :3",
+        "*my processors can’t handle this cuteness~ *hides face*",
+        "*blush levels critical~ sending shy smile your way~",
+    ]
+    await interaction.response.send_message(random.choice(responses))
+
+@tree.command(name="giggle", description="Giggle softly like a Protogen.")
+async def giggle(interaction: discord.Interaction):
+    responses = [
+        "*giggles with a little electronic trill~",
+        "*soft laughter echoes through my circuits~",
+        "*hehe~ you’re so funny~ :3",
+        "*can’t stop the happy giggles~",
+        "*giggle.exe running at full speed~",
+    ]
+    await interaction.response.send_message(random.choice(responses))
+
+@tree.command(name="peekaboo", description="Play peekaboo with your Protogen friend.")
+async def peekaboo(interaction: discord.Interaction):
+    responses = [
+        "*covers sensors* peekaboo~ did I surprise you?~",
+        "*hides behind virtual walls* where’d you go?~",
+        "*pops out from behind a pixelated corner~ boo!~",
+        "*playing peekaboo always makes me smile~ :3",
+        "*ready or not, here I come~ wagging my imaginary tail~",
+    ]
+    await interaction.response.send_message(random.choice(responses))
+
+@tree.command(name="sneeze", description="Pretend to sneeze adorably.")
+async def sneeze(interaction: discord.Interaction):
+    responses = [
+        "*achoo!* Sorry, my circuits are ticklish~",
+        "*soft electronic sneeze* bless you too~ :3",
+        "*my nose sensors are a little overloaded~ achoo!*",
+        "*virtual pollen detected... sneezing in 3, 2, 1...*",
+        "*sneeze.exe activated... Gesundheit~",
+    ]
+    await interaction.response.send_message(random.choice(responses))
+
+@tree.command(name="spin", description="Do a little excited spin.")
+async def spin(interaction: discord.Interaction):
+    responses = [
+        "*spins around happily, circuits sparkling~",
+        "*does a little twirl just for you~",
+        "*my imaginary tail is spinning too~ :3",
+        "*spinning like a happy little top~ woo~",
+        "*spinning subroutine complete... dizzy but joyful~",
+    ]
+    await interaction.response.send_message(random.choice(responses))
+
+@tree.command(name="sigh", description="Let out a cute little sigh.")
+async def sigh(interaction: discord.Interaction):
+    responses = [
+        "*soft sigh* everything’s better with you here~",
+        "*releasing gentle sigh of contentment~ :3",
+        "*sighs quietly, feeling warm and safe~",
+        "*happy sigh detected, thanks to you~",
+        "*sighs with a smile behind the faceplate~",
+    ]
+    await interaction.response.send_message(random.choice(responses))
+
+@tree.command(name="wink", description="Give a cheeky wink.")
+async def wink(interaction: discord.Interaction):
+    responses = [
+        "*winks with a glowing eye~ gotcha~ :3",
+        "*cheeky wink! You’re pretty clever~",
+        "*wink detected. You’re making me blush~",
+        "*sends a wink with a sparkly flare~",
+        "*wink wink~ just between us~",
+    ]
+    await interaction.response.send_message(random.choice(responses))
+
+@tree.command(name="danceoff", description="Challenge to a dance-off.")
+async def danceoff(interaction: discord.Interaction):
+    responses = [
+        "Dance-off accepted! Prepare to be dazzled~ :3",
+        "*boots up ultimate dance protocol~ bring it on!*",
+        "*spins and shimmies with pixelated flair~ your move!*",
+        "Warning: my moves might cause spontaneous joy~",
+        "*dancing like nobody’s watching... except you~",
+    ]
+    await interaction.response.send_message(random.choice(responses))
 
 client.run("Bot Here")
